@@ -1,14 +1,36 @@
 
 //getTeam
+const getTeam = ()=>{
 
-//getTeams
+};
+//getTeamsDESC
+const getTeamsDESC = ()=>{
 
-//getOrderTeamsDESC
+};
+//getTeamsASC
+const getTeamsASC = ()=>{
 
-//getOrderTeamsASC
-
+};
 //postTeam
+const postTeam = ()=>{
 
+};
 //putTeam
+const putTeam = ()=>{
 
+};
 //deleteTeam
+const deleteTeam = ()=>{
+
+};
+
+const service = {
+    getTeam,
+    getTeamsDESC,
+    getTeamsASC,
+    postTeam,
+    putTeam,
+    deleteTeam
+};
+
+export default service;

@@ -1,14 +1,26 @@
+import service from "../services/player.services.js";
 
 //getPlayer
+export const getPlayer = ()=>{
 
-//getPlayers
-
-//getOrderPlayersDESC
-
-//getOrderPlayersASC
-
+}
+//getPlayersDESC
+export const getPlayersDESC = ()=>{
+    
+}
+//getPlayersASC
+export const getPlayersASC = ()=>{
+    
+}
 //postPlayer
-
+export const postPlayer = ()=>{
+    
+}
 //putPlayer
-
+export const putPlayer = ()=>{
+    
+}
 //deletePlayer
+export const deletePlayer = ()=>{
+    
+}

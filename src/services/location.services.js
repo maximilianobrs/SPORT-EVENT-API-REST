@@ -1,14 +1,36 @@
 
 //getLocation
+const getLocation = ()=>{
 
-//getLocations
+};
+//getLocationsDESC
+const getLocationsDESC = ()=>{
 
-//getOrderLocationsDESC
+};
+//getLocationsASC
+const getLocationsASC = ()=>{
 
-//getOrderLocationsASC
-
+};
 //postLocation
+const postLocation = ()=>{
 
+};
 //putLocation
+const putLocation = ()=>{
 
+};
 //deleteLocation
+const deleteLocation = ()=>{
+
+};
+
+const service = {
+    getLocation,
+    getLocationsDESC,
+    getLocationsASC,
+    postLocation,
+    putLocation,
+    deleteLocation
+};
+
+export default service;

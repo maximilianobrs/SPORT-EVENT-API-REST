@@ -1,14 +1,26 @@
+import service from "../services/team.services.js";
 
 //getTeam
+export const getTeam = ()=>{
 
-//getTeams
+};
+//getTeamsDESC
+export const getTeamsDESC = ()=>{
 
-//getOrderTeamsDESC
+};
+//getTeamsASC
+export const getTeamsASC = ()=>{
 
-//getOrderTeamsASC
-
+};
 //postTeam
+export const postTeam = ()=>{
 
+};
 //putTeam
+export const putTeam = ()=>{
 
+};
 //deleteTeam
+export const deleteTeam = ()=>{
+
+};

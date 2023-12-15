@@ -2,8 +2,8 @@ import { DataTypes } from 'sequelize';
 import db from '../database/db.js';
 import Equipo from './team.js';
 
-const Emplazamiento = db.define('emplazamiento', {
-    idemplazamiento: {
+const locacion = db.define('locacion', {
+    idlocacion: {
         type: DataTypes.INTEGER,
         primaryKey: true,
         autoIncrement: true,
@@ -15,18 +15,18 @@ const Emplazamiento = db.define('emplazamiento', {
 },
     {
         timestamps: false,
-        modelName: 'emplazamiento',
+        modelName: 'locacion',
     }
 );
 
-Emplazamiento.hasMany(Equipo,{
-    foreignKey: 'idemplazamiento',
-    sourceKey:'idemplazamiento'
+locacion.hasMany(Equipo,{
+    foreignKey: 'idlocacion',
+    sourceKey:'idlocacion'
 });
 
-Equipo.belongsTo(Emplazamiento,{
-    foreignKey: 'idemplazamiento',
-    targetKey: 'idemplazamiento'
+Equipo.belongsTo(locacion,{
+    foreignKey: 'idlocacion',
+    targetKey: 'idlocacion'
 });
 
 export default Emplazamiento;

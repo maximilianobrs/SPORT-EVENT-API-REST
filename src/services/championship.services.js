@@ -1,4 +1,4 @@
-
+import Championship from '../models/championship.js'
 
 //getChampionship
 const getChampionship = ()=>{

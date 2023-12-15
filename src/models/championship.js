@@ -2,7 +2,7 @@ import { DataTypes } from 'sequelize';
 import db from "../database/db.js";
 import Equipo from './team.js';
 
-const Campeonato = db.define('campeonato', {
+const Torneo = db.define('torneo', {
     idcampeonato: {
         type: DataTypes.INTEGER,
         primaryKey: true,
@@ -28,17 +28,17 @@ const Campeonato = db.define('campeonato', {
 },
     {
         timestamps: false,
-        modelName: 'campeonato',
+        modelName: 'torneo',
     }
     
 );
 
-Campeonato.hasMany(Equipo,{
+Torneo.hasMany(Equipo,{
     foreignKey: 'idcampeonato',
     sourceKey:'idcampeonato'
 });
 
-Equipo.belongsTo(Campeonato,{
+Equipo.belongsTo(Torneo,{
     foreignKey: 'idcampeonato',
     targetKey: 'idcampeonato'
 });

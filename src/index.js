@@ -9,6 +9,7 @@ import championshipRoutes from './routes/championship.routes.js';
 import locatinRoutes from './routes/location.routes.js';
 import teamRoutes from './routes/team.routes.js';
 import playerRoutes from './routes/player.routes.js';
+import { json } from 'sequelize';
 
 //Ruta directorio actual.
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
@@ -22,6 +23,8 @@ try {
 
 //Instancia app.
 const app = Express();
+app.use(Express.json())
+
 
 app.use('/api/v1', championshipRoutes);
 app.use('/api/v1', locatinRoutes);

@@ -32,7 +32,7 @@ const Jugador = db.define('jugador', {
 },
     {
         timestamps: false,
-        modelName: 'jugadore',
+        modelName: 'jugador',
     }
 );
 
